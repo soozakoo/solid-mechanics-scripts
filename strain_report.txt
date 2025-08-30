@@ -1,0 +1,37 @@
+=== Strain Analysis Report ===
+Input interpreted as absolute strain (dimensionless).
+
+[Principal invariants of E]
+I1 = tr(E)                = 0.000000000000e+00  (0.000 μɛ)
+I2 = 0.5[(trE)^2-tr(E^2)] = -7.700000000000e-08  (-77000.000 (μɛ)^2)
+I3 = det(E)               = -5.170000000000e-12  (-5170000.000 (μɛ)^3)
+
+[Deviatoric invariants (s = E - I1/3 I)]
+J2' = 0.5*s_ij*s_ij       = 7.700000000000e-08  (77000.000 (μɛ)^2)
+J3' = det(s)              = -5.170000000000e-12  (-5170000.000 (μɛ)^3)
+
+[Principal strains and directions]
+e1 = -3.063886325741e-04  (-306.389 μɛ)
+e2 = 7.198776253654e-05  (71.988 μɛ)
+e3 = 2.344008700376e-04  (234.401 μɛ)
+Eigenvectors (columns, unit):
+[[-0.059939  0.903085 -0.425259]
+ [-0.994041 -0.015142  0.10795 ]
+ [ 0.091048  0.429195  0.898611]]
+
+[Maximum shear]
+gamma_max (engineering) = e3 - e1 = 5.407895026116e-04  (540.790 μɛ)
+tau_max (tensor)        = 0.5*gamma_max = 2.703947513058e-04  (270.395 μɛ)
+
+[Octahedral strains]
+eps_oct  = (e1+e2+e3)/3 = 0.000000000000e+00  (0.000 μɛ)
+gamma_oct (engineering) = 4.531372124791e-04  (453.137 μɛ)
+Check: gamma_oct = sqrt(8/3 * J2') -> 4.531372124791e-04
+
+[Additional descriptors]
+von Mises equivalent strain = 3.204163957519e-04  (320.416 μɛ)
+Lode angle theta            = -0.226604 rad
+Mohr circles (centers, radii):
+  circle 1: c=-1.172004350188e-04, r=1.891881975553e-04
+  circle 2: c=1.531943162870e-04, r=8.120655375051e-05
+  circle 3: c=-3.599388126827e-05, r=2.703947513058e-04
